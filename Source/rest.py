@@ -1,14 +1,13 @@
-import copy
+a = {'name': '张三', 'age': 100, 'pp': [1, 2, 4]}
+b = a.copy()
 
-a = (1, 2, 3)
+a['pp'].append(5)
 
-b = copy.copy(a)
-c = copy.deepcopy(a)
+print(id(a)) # 4302864832
+print(id(b)) # 4302865024
 
-print(id(a)) # 4413476288
-print(id(b)) # 4413476288
-print(id(c)) # 4413476288
-
+print(a) # {'name': '张三', 'age': 100, 'pp': [1, 2, 4, 5]}
+print(b) # {'name': '张三', 'age': 100, 'pp': [1, 2, 4, 5]}
 
 
 
