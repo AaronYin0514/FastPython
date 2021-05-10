@@ -1,11 +1,11 @@
+from rest import PI, _MY_PI
 
-print(__name__)
+print(PI) # 3.14
+print(_MY_PI) # 3.14
 
-def add(a, b):
-  return a + b
+# sayHello() # Hello,Python
+# _mySayHello() # ❌ NameError: name '_mySayHello' is not defined
 
-def main():
-  print('测试代码...')
-
-if __name__ == '__main__':
-  main()
+# p = Person()
+# print(p) # 我是Person对象
+# myp = _Person() # ❌ NameError: name '_Person' is not defined

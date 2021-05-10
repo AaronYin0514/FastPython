@@ -1,2 +1,19 @@
-l = [(i, j) for i in range(2) for j in range(2)]
-print(l) # [(0, 0), (0, 1), (1, 0), (1, 1)]
+PI = 3.14
+_MY_PI = 3.14
+
+def sayHello():
+    print('Hello,Python')
+
+def _mySayHello():
+    print('Hello,Python')
+
+class Person(object):
+    def __str__(self):
+        return '我是Person对象'
+
+class _Person(object):
+    def __str__(self):
+        return '我是_Person对象'
+
+
+
